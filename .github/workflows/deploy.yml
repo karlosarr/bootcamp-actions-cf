@@ -1,7 +1,11 @@
 name: Deploy to server
 
-on: push
-
+on: 
+  push:
+      branches: [main]
+  workflow_dispatch:
+  
+ 
 jobs:
   first_job:
     runs-on: ubuntu-latest
